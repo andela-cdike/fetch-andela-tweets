@@ -1,0 +1,62 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+
+{% block main %}
+
+  <main>
+    <div class="container">
+
+      <section class="col-md-4">
+        <h2>Andela Global</h2>
+        <div class="tweets-pane">
+          <ul class="list-group">
+            {% for each in andela_global %}
+                <li class="list-group-item">{{ each.text }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <a class="btn btn-info col-xs-offset-2 col-xs-8" href={% url 'index' action='andela' %}>
+          Refresh Andela Tweets
+        </a>
+      </section>
+
+      <section class="col-md-4">
+        <h2>Andela Nigeria</h2>
+        <div class="tweets-pane">
+          <ul class="list-group">
+            {% for each in andela_nigeria %}
+                <li class="list-group-item">{{ each.text }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <a class="btn btn-info  col-xs-offset-2 col-xs-8" href={% url 'index' action='andela_nigeria' %}>
+          Refresh Andela Nigeria tweets
+        </a>
+      </section>
+
+      <section class="col-md-4">
+        <h2>Andela Kenya</h2>
+        <div class="tweets-pane">
+          <ul class="list-group">
+            {% for each in andela_kenya %}
+                <li class="list-group-item">{{ each.text }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <a class="btn btn-info col-xs-offset-2 col-xs-8" href={% url 'index' action='andela_kenya' %}>
+          Refresh Andela Kenya tweets
+        </a>
+      </section>
+
+      <br />
+
+      <section id="cmd-btn">
+        <a class="btn btn-info col-md-offset-5 col-md-2" href={% url 'index' %}>
+          Refresh all tweets
+        </a>
+      </section>
+    </div>
+  </main>
+
+{% endblock main %}

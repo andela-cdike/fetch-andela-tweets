@@ -1,0 +1,9 @@
+.tweets-pane {
+    max-height: 500px;
+    border: 2px solid #ddd;
+    overflow: scroll;
+}
+
+#cmd-btn {
+    top: 10px;
+}

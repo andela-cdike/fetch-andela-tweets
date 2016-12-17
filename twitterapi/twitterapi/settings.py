@@ -124,3 +124,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# TWITTER API settings
+APP_KEY = 'DSTRriuHnaX8iFMFcBaFncdYC'
+APP_SECRET = '6li77z5CUiaACY9sUUWjTO8yd8LdT3U5nvq7Ru7FV0AGbmC6tx'
+OAUTH_TOKEN = '840420536-fdNcxNUEeQAsaLWUi8rovq2MYIDIcQvdIfIUsZaN'
+OAUTH_TOKEN_SECRET = 'Xc7lmhsM0UFvTmVycqTfAqzdeoYZWuranx6id9khuBLBM'

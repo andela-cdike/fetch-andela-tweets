@@ -1,0 +1,6 @@
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Mac OS Desktop Store
+*/.DS_Store
+.DS_Store
